@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>後端技術 on Fang&#39;s Blog</title>
+    <link>https://yufang0321.github.io/categories/%E5%BE%8C%E7%AB%AF%E6%8A%80%E8%A1%93/</link>
+    <description>Recent content in 後端技術 on Fang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 18 Oct 2023 11:23:47 +0800</lastBuildDate>
+    <atom:link href="https://yufang0321.github.io/categories/%E5%BE%8C%E7%AB%AF%E6%8A%80%E8%A1%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SpringBoot @cacheable 實作筆記</title>
+      <link>https://yufang0321.github.io/blog/springboot-1/</link>
+      <pubDate>Wed, 18 Oct 2023 11:23:47 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/springboot-1/</guid>
+      <description>spring boot @cacheable 實作 環境配置 pom檔加入spring-boot-starter-cache、com.github.ben-manes.caffeine模組 application.yml 配置 expireAfterAccess=120s 表示緩存保持2分鐘</description>
+    </item>
+  </channel>
+</rss>
