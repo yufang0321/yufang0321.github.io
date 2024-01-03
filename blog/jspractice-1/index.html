@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
+  <meta name="description" content="Map, Filter &amp; Reduce用法筆記">
   <meta name="author" content="芳芳">
     
   
@@ -116,122 +116,105 @@
 </header>
 <!-- /navigation -->
 
-
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      
-      <div class="col-lg-4">
-  <div class="widgets">
-    
-    <div class="widget">
-      
-      <h4 class="widget-title">About Me</h4>
-      
-      <img src="https://yufang0321.github.io/images/myphoto.jpg" alt=""
-        class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
-      
-      <p>我是王玉芳
-目前正在學習前端開發技術</p>
-      <a href="https://yufang0321.github.io/about/" class="btn btn-outline-primary">Know More</a>
-      
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Category</h4>
-      <ul class="list-unstyled">
-        <li><a
-            href="/categories/test/">Test</a>
-        </li>
-        <li><a
-            href="/categories/%e5%89%8d%e7%ab%af%e6%8a%80%e8%a1%93/">前端技術</a>
-        </li>
-        <li><a
-            href="/categories/%e5%be%8c%e7%ab%af%e6%8a%80%e8%a1%93/">後端技術</a>
-        </li>
-        <li><a
-            href="/categories/%e8%b2%93%e6%98%9f%e4%ba%ba/">貓星人</a>
-        </li>
-        <li><a
-            href="/categories/%e9%9c%b2%e7%87%9f/">露營</a>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Tag</h4>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/backend/">Backend</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/camping/">Camping</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/frontend/">Frontend</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/javascript/">Javascript</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/pets/">Pets</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/spring-boot/">Spring boot</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/test/">Test</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/vue.js/">Vue.js</a></li>
-      </ul>
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Social</h4>
-      <ul class="list-inline social-links">
-        
-        <li class="list-inline-item"><a href="https://github.com/yufang0321"><i class="ti-github"></i></a></li>
-        
-      </ul>
-    </div>
-    
-    
-  </div>
-</div>
-
-      
-      <div class="col-lg-8 mb-5 mb-lg-0">
-        <div class="row">
-          
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
+      <div class="col-lg-8 mx-auto">
         
         <a href="/categories/%e5%89%8d%e7%ab%af%e6%8a%80%e8%a1%93"
-            class="text-primary">前端技術</a>
+          class="text-primary">前端技術</a>
         
-        <a href="https://yufang0321.github.io/blog/vue_practice/" class="h5 d-block my-3">前端框架練習</a>
+        <h2>Map, Filter &amp; Reduce 用法區別</h2>
         <div class="mb-3 post-meta">
-            <span>By 芳芳</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2023-12-25</span>
-            
-        </div>
-        <p class="card-text">使用vue框架架構前端店商網站</p>
-        <a href="https://yufang0321.github.io/blog/vue_practice/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
+          <span>By 芳芳</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>03 January 2023</span>
           
         </div>
-      </div>
-      
+        
+        <div class="content mb-5">
+          <h3 id="map">Map()</h3>
+<h5 id="說文解字重新整理一陣列內容並回傳一新的陣列">說文解字：重新整理一陣列內容，並回傳一新的陣列</h5>
+<ul>
+<li>
+<p>基本語法：<code>Array.map(function(currentValue, index, arr), thisValue)</code></p>
+<ul>
+<li><code>currentValue</code>:當前正在處理的元素</li>
+<li><code>index</code>:正在處理的元素在array中的索引</li>
+<li><code>array</code>:正在處理的array本身</li>
+</ul>
+</li>
+<li>
+<p>不會改變原陣列，回傳一新的陣列</p>
+</li>
+<li>
+<p>陣列長度不變</p>
+</li>
+<li>
+<p>若沒有回傳值，則為undefined</p>
+</li>
+</ul>
+<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const arr = [
+  { name: &#39;Frank&#39;, age: 28, tel: &#39;0912345678&#39; },
+  { name: &#39;Peter&#39;, age: 30, tel: &#39;0987654321&#39; }
+];
 
-      
-      <div class="col-12 mt-5">
+const newArr = arr.map((e) =&gt; e.name);
+console.log(&#39;newArr:&#39;, newArr); //[&#39;Frank&#39;, &#39;Peter&#39;]
+</code></pre><h3 id="filter">Filter()</h3>
+<h5 id="說文解字過濾出符合條件的內容">說文解字：過濾出符合條件的內容</h5>
+<ul>
+<li>
+<p>基本語法：<code>array.filter(function(currentValue, index, arr), thisValue)</code></p>
+<ul>
+<li><code>currentValue</code>:當前正在處理的元素</li>
+<li><code>index</code>:正在處理的元素在array中的索引</li>
+<li><code>array</code>:正在處理的array本身</li>
+</ul>
+</li>
+<li>
+<p>為淺拷貝，不會改變原陣列</p>
+</li>
+</ul>
+<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const arr = [
+  { name: &#39;Frank&#39;, age: 28, tel: &#39;0912345678&#39; },
+  { name: &#39;Peter&#39;, age: 30, tel: &#39;0987654321&#39; }
+];
+
+const newArr = arr.filter((e) =&gt; {
+      return e.age &gt;= 30
+    })
+console.log(&#39;newArr:&#39;, newArr) //[{name: &#39;Peter&#39;, age: 30, tel: &#39;0987654321&#39;}]
+</code></pre><h3 id="reduce">Reduce()</h3>
+<h5 id="說文解字return的是一個值或物件等可以是任何型態而非陣列是將當前元素和前一步累加的結果相加">說文解字：return的是一個值或物件等(可以是任何型態)，而非陣列，是將當前元素和前一步累加的結果相加</h5>
+<ul>
+<li>
+<p>基本語法：<code>Aarray.reduce(function(total, currentValue, currentIndex, arr), initialValue)</code></p>
+<ul>
+<li><code>total</code>:上一次累加的结果。但如果指定了初始值則為指定的值，否則為第一個元素的值。</li>
+<li><code>currentValue</code>:當前元素的值。第一次foreach時，如果指定了初始值則為array[0]，否則為array[1]。</li>
+<li><code>currentIndex</code>:索引位置。第一次foreach時，如果有指定初始值則為0，否則為1。</li>
+<li><code>array</code>:array陣列本身。</li>
+</ul>
+</li>
+</ul>
+<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const arr = [1, 2, 3, 4, 5, 6];
+
+const newArr = arr.reduce((total, currentValue) =&gt; {
+      return total + currentValue
+    }, 5)
+console.log(&#39;newArr:&#39;, newArr) // 26
+</code></pre><p>reduce的用法還有好幾種，可以參考：https://w3c.hexschool.com/blog/a2cb755f</p>
+
+        </div>
+
+        
         
       </div>
     </div>
   </div>
 </section>
-
 
 
 

@@ -37,6 +37,13 @@
       <description>spring boot @cacheable 實作 環境配置 pom檔加入spring-boot-starter-cache、com.github.ben-manes.caffeine模組 application.yml 配置 expireAfterAccess=120s 表示緩存保持2分鐘</description>
     </item>
     <item>
+      <title>Map, Filter &amp; Reduce 用法區別</title>
+      <link>https://yufang0321.github.io/blog/jspractice-1/</link>
+      <pubDate>Tue, 03 Jan 2023 15:40:50 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-1/</guid>
+      <description>Map() 說文解字：重新整理一陣列內容，並回傳一新的陣列 基本語法：Array.map(function(currentValue, index, arr), thisValue)&#xA;currentValue:當前正在處理的元素 index:正在處理的元素在array中的索引 array:正在處理的array本身 不會改變原陣列，回傳一新的陣列</description>
+    </item>
+    <item>
       <title>Test</title>
       <link>https://yufang0321.github.io/blog/post-13/</link>
       <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
