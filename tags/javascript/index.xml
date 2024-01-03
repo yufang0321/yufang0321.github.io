@@ -6,12 +6,12 @@
     <description>Recent content in JavaScript on Fang&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Tue, 03 Jan 2023 15:40:50 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jan 2024 15:40:50 +0800</lastBuildDate>
     <atom:link href="https://yufang0321.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Map, Filter &amp; Reduce 用法區別</title>
       <link>https://yufang0321.github.io/blog/jspractice-1/</link>
-      <pubDate>Tue, 03 Jan 2023 15:40:50 +0800</pubDate>
+      <pubDate>Wed, 03 Jan 2024 15:40:50 +0800</pubDate>
       <guid>https://yufang0321.github.io/blog/jspractice-1/</guid>
       <description>Map() 說文解字：重新整理一陣列內容，並回傳一新的陣列 基本語法：Array.map(function(currentValue, index, arr), thisValue)&#xA;currentValue:當前正在處理的元素 index:正在處理的元素在array中的索引 array:正在處理的array本身 不會改變原陣列，回傳一新的陣列</description>
     </item>
