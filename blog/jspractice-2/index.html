@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
+  <meta name="description" content="淺拷貝(shallow copy)與深拷貝(deep copy)的比較">
   <meta name="author" content="芳芳">
     
   
@@ -116,143 +116,83 @@
 </header>
 <!-- /navigation -->
 
-
-
-
-<section class="section pb-0">
+<section class="section-sm">
   <div class="container">
     <div class="row">
-      
-      <div class="col-lg-4">
-  <div class="widgets">
-    
-    <div class="widget">
-      
-      <h4 class="widget-title">About Me</h4>
-      
-      <img src="https://yufang0321.github.io/images/myphoto.jpg" alt=""
-        class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
-      
-      <p>我是王玉芳
-目前正在學習前端開發技術</p>
-      <a href="https://yufang0321.github.io/about/" class="btn btn-outline-primary">Know More</a>
-      
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Category</h4>
-      <ul class="list-unstyled">
-        <li><a
-            href="/categories/test/">Test</a>
-        </li>
-        <li><a
-            href="/categories/%e5%89%8d%e7%ab%af%e6%8a%80%e8%a1%93/">前端技術</a>
-        </li>
-        <li><a
-            href="/categories/%e5%be%8c%e7%ab%af%e6%8a%80%e8%a1%93/">後端技術</a>
-        </li>
-        <li><a
-            href="/categories/%e8%b2%93%e6%98%9f%e4%ba%ba/">貓星人</a>
-        </li>
-        <li><a
-            href="/categories/%e9%9c%b2%e7%87%9f/">露營</a>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Tag</h4>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/backend/">Backend</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/camping/">Camping</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/frontend/">Frontend</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/javascript/">Javascript</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/pets/">Pets</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/spring-boot/">Spring boot</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/test/">Test</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/vue.js/">Vue.js</a></li>
-      </ul>
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Social</h4>
-      <ul class="list-inline social-links">
+      <div class="col-lg-8 mx-auto">
         
-        <li class="list-inline-item"><a href="https://github.com/yufang0321"><i class="ti-github"></i></a></li>
+        <a href="/categories/%e5%89%8d%e7%ab%af%e6%8a%80%e8%a1%93"
+          class="text-primary">前端技術</a>
         
-      </ul>
-    </div>
-    
-    
-  </div>
-</div>
-
-      
-      <div class="col-lg-8 mb-5 mb-lg-0">
-        <div class="row">
+        <h2>淺拷貝(shallow copy)與深拷貝(deep copy)</h2>
+        <div class="mb-3 post-meta">
+          <span>By 芳芳</span>
           
-          
-          <div class="col-md-6 mb-4">
-            <article class="card">
-              <div class="card-body px-0">
-                
-                <a href="/categories/test"
-                  class="text-primary">Test</a>
-                
-                <a href="https://yufang0321.github.io/blog/post-13/" class="h5 d-block my-3">Test</a>
-                <div class="mb-3 post-meta">
-                  <span>By 芳芳</span>
-                  
-                  <span class="border-bottom border-primary px-2 mx-1"></span>
-                  <span>2019-10-29</span>
-                  
-                </div>
-                <p class="card-text">this is meta description</p>
-                <a href="https://yufang0321.github.io/blog/post-13/" class="btn btn-outline-primary">read more</a>
-              </div>
-            </article>
-          </div>
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>04 January 2024</span>
           
         </div>
-      </div>
-      
-
-      
-      <div class="col-12 mt-5">
         
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
+        <div class="content mb-5">
+          <p>在工作中踩過的雷，紀錄一下</p>
+<h3 id="淺拷貝shallow-copy">淺拷貝shallow copy</h3>
+<h5 id="方法一">方法一</h5>
+<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const objA = {
+      a: 1,
+      b: 2
+}
+
+const objB = objA
+objB.a = 3
+
+console.log(&#39;objA.a:&#39;, objA.a) // 3
+</code></pre><h5 id="方法二使用es6的rest-operator複製">方法二：使用ES6的Rest Operator複製</h5>
+<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const objA = {
+  a: 1,
+  b: {
+    c: 2
+  }
+}
+
+const objB = { ...objA }
+
+objB.a = 3
+objB.b.c = 4
+
+console.log(objA) //{a:1, b:{c: 4}}
+console.log(objB) //{a:3, b:{c: 4}}
+</code></pre><p>可以注意到，上面的例子，objB.a時因為是第一層，objA不會被影響到
+但objB.b.c時第二層之後，就會改道objA的值</p>
+<h5 id="方法三objectassigntarget-source">方法三：Object.assign(target, source)</h5>
+<h3 id="深拷貝deep-copy">深拷貝deep copy</h3>
+<h5 id="方法一jsonparsejsonstringify">方法一：JSON.parse(JSON.stringify())</h5>
+<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const objA = {
+      a: 1,
+      b: { c: 3 }
+}
+
+const objB = JSON.parse(JSON.stringify(objA))
+
+console.log(objA === objB) // false
+console.log(objA.b === objB.b) // false
+</code></pre><p>另外參考：https://www.programfarmer.com/articles/2021/javascript-shallow-copy-deep-copy
+有說到JSON.stringfy/parse處理後，有些值會產生變化，例如：</p>
+<ul>
+<li>undefined：會連同key一起消失</li>
+<li>NaN：會被轉成 null。</li>
+<li>Infinity：會被轉成 null。</li>
+<li>regExp：會被轉乘 空 {}。</li>
+<li>Date：型別會由 Data 轉成 string。</li>
+</ul>
+
+        </div>
+
+        
+        
       </div>
     </div>
   </div>
 </section>
-
 
 
 

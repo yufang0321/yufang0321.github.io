@@ -9,6 +9,13 @@
     <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate>
     <atom:link href="https://yufang0321.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>淺拷貝(shallow copy)與深拷貝(deep copy)</title>
+      <link>https://yufang0321.github.io/blog/jspractice-2/</link>
+      <pubDate>Thu, 04 Jan 2024 09:31:50 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-2/</guid>
+      <description>在工作中踩過的雷，紀錄一下&#xA;淺拷貝shallow copy 方法一 const objA = {&#xD;a: 1,&#xD;b: 2&#xD;}&#xD;const objB = objA&#xD;objB.</description>
+    </item>
+    <item>
       <title>Map, Filter &amp; Reduce 用法區別</title>
       <link>https://yufang0321.github.io/blog/jspractice-1/</link>
       <pubDate>Wed, 03 Jan 2024 15:40:50 +0800</pubDate>
