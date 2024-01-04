@@ -159,12 +159,22 @@ const objB = { ...objA }
 objB.a = 3
 objB.b.c = 4
 
-console.log(objA) //{a:1, b:{c: 4}}
-console.log(objB) //{a:3, b:{c: 4}}
-</code></pre><p>可以注意到，上面的例子，objB.a時因為是第一層，objA不會被影響到
-但objB.b.c時第二層之後，就會改道objA的值</p>
-<h5 id="方法三objectassigntarget-source">方法三：Object.assign(target, source)</h5>
-<h3 id="深拷貝deep-copy">深拷貝deep copy</h3>
+console.log(objA) //{a:1, b:{c: 4}}, 第一層有成功複製
+console.log(objB) //{a:3, b:{c: 4}}, 第二層以後仍指向原來的objA的位置
+</code></pre><h5 id="方法三objectassigntarget-source">方法三：Object.assign(target, source)</h5>
+<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const objA = {
+  a: 1,
+  b: { c: 2 }
+}
+
+const objB = Object.assign({}, objA)
+
+objA.a = 3
+objA.b.c = 4
+
+console.log(objB) // 1, 第一層有成功複製
+console.log(objB.b.c) // 4, 第二層以後仍指向原來的objA的位置
+</code></pre><h3 id="深拷貝deep-copy">深拷貝deep copy</h3>
 <h5 id="方法一jsonparsejsonstringify">方法一：JSON.parse(JSON.stringify())</h5>
 <pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const objA = {
       a: 1,
