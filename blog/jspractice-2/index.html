@@ -185,7 +185,8 @@ const objB = JSON.parse(JSON.stringify(objA))
 
 console.log(objA === objB) // false
 console.log(objA.b === objB.b) // false
-</code></pre><p>另外參考：https://www.programfarmer.com/articles/2021/javascript-shallow-copy-deep-copy
+</code></pre><p>另外參考：
+<a href="https://www.programfarmer.com/articles/2021/javascript-shallow-copy-deep-copy">https://www.programfarmer.com/articles/2021/javascript-shallow-copy-deep-copy</a>
 有說到JSON.stringfy/parse處理後，有些值會產生變化，例如：</p>
 <ul>
 <li>undefined：會連同key一起消失</li>
