@@ -134,8 +134,7 @@
         </div>
         
         <div class="content mb-5">
-          <p>javascript書籍閱讀筆記</p>
-<h3 id="什麼是函式陳述式甚麼是函是表達式">什麼是函式陳述式、甚麼是函是表達式</h3>
+          <p>javascript書籍閱讀筆記，把不熟悉的觀念用自己的方式記錄與整理一遍！</p>
 <p>先看看這一段程式碼，想想會印出甚麼~</p>
 <pre tabindex="0"><code class="language-javascripy=" data-lang="javascripy=">var fn1 = function() {
     console.log(&#34;我是函式表達式&#34;);
@@ -146,24 +145,17 @@ function fn1() {
 }
 
 fn1();
-</code></pre><p>.
-.
-.
-.
-.
-.
-.</p>
-<p>答案是：&ldquo;我是函式表達式&rdquo;</p>
-<p>第一次看這段程式碼時，百思不得其解，一查之下才發現，有幾個重要觀念：</p>
+</code></pre><p>答案是：&ldquo;我是函式表達式&rdquo;</p>
+<p>第一次看這段程式碼時，百思不得其解，主要有幾個重要觀念：</p>
 <ol>
-<li>函式陳述式與函式表達式：</li>
+<li><strong>函式陳述式與函式表達式</strong>：</li>
 </ol>
 <ul>
 <li>函式陳述式(Function Statement)：直接宣告一個函式，並且賦與名稱。</li>
 <li>函式表達式(Function Expression)：宣告一個變數，使用運算子將函式附與到變數上。</li>
 </ul>
 <ol start="2">
-<li>函式陳述式優先：瀏覽器在在執行程式時，會經過兩階段，第一是創造階段、第二是執行階段</li>
+<li><strong>函式陳述式優先</strong>：瀏覽器在在執行程式時，會經過兩階段，第一是創造階段、第二是執行階段</li>
 </ol>
 <ul>
 <li>創造階段時，會先準備一個記憶體空間</li>
@@ -184,6 +176,7 @@ fn1 = function() {
 
 fn1();
 </code></pre><p>在創造階段時，因為函式陳述式優先，故會先在創造階段時就定義好fn1函式，但此時尚未賦與值，在進入執行階段時，才會再把函式表達式內容賦與進去，故得到&quot;我是函式表達式&quot;的結果。</p>
+<p>閱讀書籍:<a href="https://www.books.com.tw/products/0010941867">看完這本就會懂！帶你無痛提升JavaScript面試力：精選55道前端工程師的核心問題 × 求職加分模擬試題解析</a></p>
 
         </div>
 

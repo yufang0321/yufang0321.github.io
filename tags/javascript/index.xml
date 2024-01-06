@@ -13,7 +13,7 @@
       <link>https://yufang0321.github.io/blog/jspractice-3/</link>
       <pubDate>Sat, 06 Jan 2024 14:28:50 +0800</pubDate>
       <guid>https://yufang0321.github.io/blog/jspractice-3/</guid>
-      <description>javascript書籍閱讀筆記&#xA;什麼是函式陳述式、甚麼是函是表達式 先看看這一段程式碼，想想會印出甚麼~&#xA;var fn1 = function() {&#xD;console.log(&amp;#34;我是函式表達式&amp;#34;);&#xD;}&#xD;function fn1() {&#xD;console.</description>
+      <description>javascript書籍閱讀筆記，把不熟悉的觀念用自己的方式記錄與整理一遍！&#xA;先看看這一段程式碼，想想會印出甚麼~&#xA;var fn1 = function() {&#xD;console.log(&amp;#34;我是函式表達式&amp;#34;);&#xD;}&#xD;function fn1() {&#xD;console.</description>
     </item>
     <item>
       <title>淺拷貝(shallow copy)與深拷貝(deep copy)</title>
