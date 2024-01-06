@@ -6,8 +6,15 @@
     <description>Recent content in JavaScript on Fang&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Thu, 04 Jan 2024 09:31:50 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jan 2024 14:28:50 +0800</lastBuildDate>
     <atom:link href="https://yufang0321.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>函式陳述式與函式表達式</title>
+      <link>https://yufang0321.github.io/blog/jspractice-3/</link>
+      <pubDate>Sat, 06 Jan 2024 14:28:50 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-3/</guid>
+      <description>javascript書籍閱讀筆記&#xA;什麼是函式陳述式、甚麼是函是表達式 先看看這一段程式碼，想想會印出甚麼~&#xA;var fn1 = function() {&#xD;console.log(&amp;#34;我是函式表達式&amp;#34;);&#xD;}&#xD;function fn1() {&#xD;console.</description>
+    </item>
     <item>
       <title>淺拷貝(shallow copy)與深拷貝(deep copy)</title>
       <link>https://yufang0321.github.io/blog/jspractice-2/</link>
