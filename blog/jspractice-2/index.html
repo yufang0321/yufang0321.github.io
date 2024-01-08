@@ -119,7 +119,7 @@
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto">
+      <div class="col-lg-10 mx-auto">
         
         <a href="/categories/%e5%89%8d%e7%ab%af%e6%8a%80%e8%a1%93"
           class="text-primary">前端技術</a>
@@ -137,55 +137,42 @@
           <p>在工作中踩過的雷，紀錄一下</p>
 <h3 id="淺拷貝shallow-copy">淺拷貝shallow copy</h3>
 <h5 id="方法一">方法一</h5>
-<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const objA = {
-      a: 1,
-      b: 2
-}
-
-const objB = objA
-objB.a = 3
-
-console.log(&#39;objA.a:&#39;, objA.a) // 3
-</code></pre><h5 id="方法二使用es6的rest-operator複製">方法二：使用ES6的Rest Operator複製</h5>
-<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const objA = {
-  a: 1,
-  b: {
-    c: 2
-  }
-}
-
-const objB = { ...objA }
-
-objB.a = 3
-objB.b.c = 4
-
-console.log(objA) //{a:1, b:{c: 4}}, 第一層有成功複製
-console.log(objB) //{a:3, b:{c: 4}}, 第二層以後仍指向原來的objA的位置
-</code></pre><h5 id="方法三objectassigntarget-source">方法三：Object.assign(target, source)</h5>
-<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const objA = {
-  a: 1,
-  b: { c: 2 }
-}
-
-const objB = Object.assign({}, objA)
-
-objA.a = 3
-objA.b.c = 4
-
-console.log(objB) // 1, 第一層有成功複製
-console.log(objB.b.c) // 4, 第二層以後仍指向原來的objA的位置
-</code></pre><h3 id="深拷貝deep-copy">深拷貝deep copy</h3>
+<div class="highlight"><pre tabindex="0" style="color:#4c4f69;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8839ef">const</span> objA <span style="color:#04a5e5;font-weight:bold">=</span> { a<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#fe640b">1</span>, b<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#fe640b">2</span> }
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">const</span> objB <span style="color:#04a5e5;font-weight:bold">=</span> objA
+</span></span><span style="display:flex;"><span>objB.a <span style="color:#04a5e5;font-weight:bold">=</span> <span style="color:#fe640b">3</span>
+</span></span><span style="display:flex;"><span>console.log(<span style="color:#40a02b">&#39;objA.a:&#39;</span>, objA.a) <span style="color:#9ca0b0;font-style:italic">// 3
+</span></span></span></code></pre></div><h5 id="方法二使用es6的rest-operator複製">方法二：使用ES6的Rest Operator複製</h5>
+<div class="highlight"><pre tabindex="0" style="color:#4c4f69;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8839ef">const</span> objA <span style="color:#04a5e5;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  a<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#fe640b">1</span>,
+</span></span><span style="display:flex;"><span>  b<span style="color:#04a5e5;font-weight:bold">:</span> {
+</span></span><span style="display:flex;"><span>    c<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#fe640b">2</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">const</span> objB <span style="color:#04a5e5;font-weight:bold">=</span> { ...objA }
+</span></span><span style="display:flex;"><span>objB.a <span style="color:#04a5e5;font-weight:bold">=</span> <span style="color:#fe640b">3</span>
+</span></span><span style="display:flex;"><span>objB.b.c <span style="color:#04a5e5;font-weight:bold">=</span> <span style="color:#fe640b">4</span>
+</span></span><span style="display:flex;"><span>console.log(objA) <span style="color:#9ca0b0;font-style:italic">//{a:1, b:{c: 4}}, 第一層有成功複製
+</span></span></span><span style="display:flex;"><span><span style="color:#9ca0b0;font-style:italic"></span>console.log(objB) <span style="color:#9ca0b0;font-style:italic">//{a:3, b:{c: 4}}, 第二層以後仍指向原來的objA的位置
+</span></span></span></code></pre></div><h5 id="方法三objectassigntarget-source">方法三：Object.assign(target, source)</h5>
+<div class="highlight"><pre tabindex="0" style="color:#4c4f69;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8839ef">const</span> objA <span style="color:#04a5e5;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  a<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#fe640b">1</span>,
+</span></span><span style="display:flex;"><span>  b<span style="color:#04a5e5;font-weight:bold">:</span> { c<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#fe640b">2</span> }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">const</span> objB <span style="color:#04a5e5;font-weight:bold">=</span> <span style="color:#04a5e5">Object</span>.assign({}, objA)
+</span></span><span style="display:flex;"><span>objA.a <span style="color:#04a5e5;font-weight:bold">=</span> <span style="color:#fe640b">3</span>
+</span></span><span style="display:flex;"><span>objA.b.c <span style="color:#04a5e5;font-weight:bold">=</span> <span style="color:#fe640b">4</span>
+</span></span><span style="display:flex;"><span>console.log(objB) <span style="color:#9ca0b0;font-style:italic">// 1, 第一層有成功複製
+</span></span></span><span style="display:flex;"><span><span style="color:#9ca0b0;font-style:italic"></span>console.log(objB.b.c) <span style="color:#9ca0b0;font-style:italic">// 4, 第二層以後仍指向原來的objA的位置
+</span></span></span></code></pre></div><h3 id="深拷貝deep-copy">深拷貝deep copy</h3>
 <h5 id="方法一jsonparsejsonstringify">方法一：JSON.parse(JSON.stringify())</h5>
-<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const objA = {
-      a: 1,
-      b: { c: 3 }
-}
-
-const objB = JSON.parse(JSON.stringify(objA))
-
-console.log(objA === objB) // false
-console.log(objA.b === objB.b) // false
-</code></pre><p>另外參考：
+<div class="highlight"><pre tabindex="0" style="color:#4c4f69;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8839ef">const</span> objA <span style="color:#04a5e5;font-weight:bold">=</span> {
+</span></span><span style="display:flex;"><span>  a<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#fe640b">1</span>,
+</span></span><span style="display:flex;"><span>  b<span style="color:#04a5e5;font-weight:bold">:</span> { c<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#fe640b">3</span> }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">const</span> objB <span style="color:#04a5e5;font-weight:bold">=</span> JSON.parse(JSON.stringify(objA))
+</span></span><span style="display:flex;"><span>console.log(objA <span style="color:#04a5e5;font-weight:bold">===</span> objB) <span style="color:#9ca0b0;font-style:italic">// false
+</span></span></span><span style="display:flex;"><span><span style="color:#9ca0b0;font-style:italic"></span>console.log(objA.b <span style="color:#04a5e5;font-weight:bold">===</span> objB.b) <span style="color:#9ca0b0;font-style:italic">// false
+</span></span></span></code></pre></div><p>另外參考：
 <a href="https://www.programfarmer.com/articles/2021/javascript-shallow-copy-deep-copy">https://www.programfarmer.com/articles/2021/javascript-shallow-copy-deep-copy</a>
 有說到JSON.stringfy/parse處理後，有些值會產生變化，例如：</p>
 <ul>

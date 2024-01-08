@@ -9,18 +9,25 @@
     <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate>
     <atom:link href="https://yufang0321.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>第二露-新竹田埔露營區</title>
+      <link>https://yufang0321.github.io/blog/camping-2/</link>
+      <pubDate>Sun, 07 Jan 2024 11:01:10 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/camping-2/</guid>
+      <description>我們的第一次跨年露營！ 這次的目的地是：新竹尖石田埔露營地&#xA;和好友一共四個人，另外再租了天幕和冰桶&#xA;因為人數比較多，所以另外租了大冰桶和天幕，在松果戶外新竹店租裝備，可先在網路預訂要租的設備和時間&#xA;領完裝備就出發前往露營地，老實說路真的很不好開，在後面一段Google map路程是10幾分鐘，但我們開了至少半小時&amp;hellip;都是一段有水泥一段是石頭泥巴路，一路上還遇到兩次會車，還好都是當地人的車，一路後退讓我們通過 中間有一度還開錯路，趕緊掉頭&#xA;錯過叉路的位置：24°38&#39;23.5&amp;quot;N 121°16&#39;30.1&amp;quot;E 抵達！本來以為會很冷，結果天氣超好，太陽很大，大家開始脫外套 準備搭帳棚~</description>
+    </item>
+    <item>
       <title>函式陳述式與函式表達式</title>
       <link>https://yufang0321.github.io/blog/jspractice-3/</link>
       <pubDate>Sat, 06 Jan 2024 14:28:50 +0800</pubDate>
       <guid>https://yufang0321.github.io/blog/jspractice-3/</guid>
-      <description>javascript書籍閱讀筆記，把不熟悉的觀念用自己的方式記錄與整理一遍！&#xA;先看看這一段程式碼，想想會印出甚麼~&#xA;var fn1 = function() {&#xD;console.log(&amp;#34;我是函式表達式&amp;#34;);&#xD;}&#xD;function fn1() {&#xD;console.</description>
+      <description>javascript書籍閱讀筆記，把不熟悉的觀念用自己的方式記錄與整理一遍！&#xA;先看看這一段程式碼，想想會印出甚麼~&#xA;var fn1 = function() { console.log(&amp;#34;我是函式表達式&amp;#34;); } function fn1() { console.</description>
     </item>
     <item>
       <title>淺拷貝(shallow copy)與深拷貝(deep copy)</title>
       <link>https://yufang0321.github.io/blog/jspractice-2/</link>
       <pubDate>Thu, 04 Jan 2024 09:31:50 +0800</pubDate>
       <guid>https://yufang0321.github.io/blog/jspractice-2/</guid>
-      <description>在工作中踩過的雷，紀錄一下&#xA;淺拷貝shallow copy 方法一 const objA = {&#xD;a: 1,&#xD;b: 2&#xD;}&#xD;const objB = objA&#xD;objB.</description>
+      <description>在工作中踩過的雷，紀錄一下&#xA;淺拷貝shallow copy 方法一 const objA = { a: 1, b: 2 } const objB = objA objB.</description>
     </item>
     <item>
       <title>Map, Filter &amp; Reduce 用法區別</title>
