@@ -155,14 +155,14 @@
 <p>若沒有回傳值，則為undefined</p>
 </li>
 </ul>
-<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const arr = [
-  { name: &#39;Frank&#39;, age: 28, tel: &#39;0912345678&#39; },
-  { name: &#39;Peter&#39;, age: 30, tel: &#39;0987654321&#39; }
-];
-
-const newArr = arr.map((e) =&gt; e.name);
-console.log(&#39;newArr:&#39;, newArr); //[&#39;Frank&#39;, &#39;Peter&#39;]
-</code></pre><h3 id="filter">Filter()</h3>
+<div class="highlight"><pre tabindex="0" style="color:#4c4f69;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8839ef">const</span> arr <span style="color:#04a5e5;font-weight:bold">=</span> [
+</span></span><span style="display:flex;"><span>  { name<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#40a02b">&#39;Frank&#39;</span>, age<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#fe640b">28</span>, tel<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#40a02b">&#39;0912345678&#39;</span> },
+</span></span><span style="display:flex;"><span>  { name<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#40a02b">&#39;Peter&#39;</span>, age<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#fe640b">30</span>, tel<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#40a02b">&#39;0987654321&#39;</span> }
+</span></span><span style="display:flex;"><span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">const</span> newArr <span style="color:#04a5e5;font-weight:bold">=</span> arr.map((e) =&gt; e.name);
+</span></span><span style="display:flex;"><span>console.log(<span style="color:#40a02b">&#39;newArr:&#39;</span>, newArr); <span style="color:#9ca0b0;font-style:italic">//[&#39;Frank&#39;, &#39;Peter&#39;]
+</span></span></span></code></pre></div><h3 id="filter">Filter()</h3>
 <h5 id="說文解字過濾出符合條件的內容">說文解字：過濾出符合條件的內容</h5>
 <ul>
 <li>
@@ -177,16 +177,16 @@ console.log(&#39;newArr:&#39;, newArr); //[&#39;Frank&#39;, &#39;Peter&#39;]
 <p>為淺拷貝，不會改變原陣列</p>
 </li>
 </ul>
-<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const arr = [
-  { name: &#39;Frank&#39;, age: 28, tel: &#39;0912345678&#39; },
-  { name: &#39;Peter&#39;, age: 30, tel: &#39;0987654321&#39; }
-];
-
-const newArr = arr.filter((e) =&gt; {
-      return e.age &gt;= 30
-    })
-console.log(&#39;newArr:&#39;, newArr) //[{name: &#39;Peter&#39;, age: 30, tel: &#39;0987654321&#39;}]
-</code></pre><h3 id="reduce">Reduce()</h3>
+<div class="highlight"><pre tabindex="0" style="color:#4c4f69;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8839ef">const</span> arr <span style="color:#04a5e5;font-weight:bold">=</span> [
+</span></span><span style="display:flex;"><span>  { name<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#40a02b">&#39;Frank&#39;</span>, age<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#fe640b">28</span>, tel<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#40a02b">&#39;0912345678&#39;</span> },
+</span></span><span style="display:flex;"><span>  { name<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#40a02b">&#39;Peter&#39;</span>, age<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#fe640b">30</span>, tel<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#40a02b">&#39;0987654321&#39;</span> }
+</span></span><span style="display:flex;"><span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">const</span> newArr <span style="color:#04a5e5;font-weight:bold">=</span> arr.filter((e) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#8839ef">return</span> e.age <span style="color:#04a5e5;font-weight:bold">&gt;=</span> <span style="color:#fe640b">30</span>
+</span></span><span style="display:flex;"><span>    })
+</span></span><span style="display:flex;"><span>console.log(<span style="color:#40a02b">&#39;newArr:&#39;</span>, newArr) <span style="color:#9ca0b0;font-style:italic">//[{name: &#39;Peter&#39;, age: 30, tel: &#39;0987654321&#39;}]
+</span></span></span></code></pre></div><h3 id="reduce">Reduce()</h3>
 <h5 id="說文解字return的是一個值或物件等可以是任何型態而非陣列是將當前元素和前一步累加的結果相加">說文解字：return的是一個值或物件等(可以是任何型態)，而非陣列，是將當前元素和前一步累加的結果相加</h5>
 <ul>
 <li>
@@ -199,13 +199,13 @@ console.log(&#39;newArr:&#39;, newArr) //[{name: &#39;Peter&#39;, age: 30, tel: 
 </ul>
 </li>
 </ul>
-<pre tabindex="0"><code class="language-javascript=" data-lang="javascript=">const arr = [1, 2, 3, 4, 5, 6];
-
-const newArr = arr.reduce((total, currentValue) =&gt; {
-      return total + currentValue
-    }, 5)
-console.log(&#39;newArr:&#39;, newArr) // 26
-</code></pre><p>reduce的用法還有好幾種，可以參考：https://w3c.hexschool.com/blog/a2cb755f</p>
+<div class="highlight"><pre tabindex="0" style="color:#4c4f69;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8839ef">const</span> arr <span style="color:#04a5e5;font-weight:bold">=</span> [<span style="color:#fe640b">1</span>, <span style="color:#fe640b">2</span>, <span style="color:#fe640b">3</span>, <span style="color:#fe640b">4</span>, <span style="color:#fe640b">5</span>, <span style="color:#fe640b">6</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">const</span> newArr <span style="color:#04a5e5;font-weight:bold">=</span> arr.reduce((total, currentValue) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#8839ef">return</span> total <span style="color:#04a5e5;font-weight:bold">+</span> currentValue
+</span></span><span style="display:flex;"><span>    }, <span style="color:#fe640b">5</span>)
+</span></span><span style="display:flex;"><span>console.log(<span style="color:#40a02b">&#39;newArr:&#39;</span>, newArr) <span style="color:#9ca0b0;font-style:italic">// 26
+</span></span></span></code></pre></div><p>reduce的用法還有好幾種，可以參考：https://w3c.hexschool.com/blog/a2cb755f</p>
 
         </div>
 

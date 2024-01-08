@@ -62,7 +62,7 @@
       <link>https://yufang0321.github.io/blog/springboot-1/</link>
       <pubDate>Wed, 18 Oct 2023 11:23:47 +0800</pubDate>
       <guid>https://yufang0321.github.io/blog/springboot-1/</guid>
-      <description>spring boot @cacheable 實作 環境配置 pom檔加入spring-boot-starter-cache、com.github.ben-manes.caffeine模組 application.yml 配置 expireAfterAccess=120s 表示緩存保持2分鐘</description>
+      <description>spring boot @cacheable 實作 環境配置 pom檔加入spring-boot-starter-cache、com.github.ben-manes.caffeine模組 application.yml 配置&#xA;expireAfterAccess=120s 表示緩存保持2分鐘</description>
     </item>
     <item>
       <title>Test</title>
