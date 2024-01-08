@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="This is meta description">
+  <meta name="description" content="紀錄初始Angular專案會用到的指令和概念">
   <meta name="author" content="芳芳">
     
   
@@ -116,124 +116,66 @@
 </header>
 <!-- /navigation -->
 
-
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      
-      <div class="col-lg-4">
-  <div class="widgets">
-    
-    <div class="widget">
-      
-      <h4 class="widget-title">About Me</h4>
-      
-      <img src="https://yufang0321.github.io/images/myphoto.jpg" alt=""
-        class="img-fluid author-thumb-sm d-block mx-auto rounded-circle mb-4">
-      
-      <p>我是王玉芳
-目前正在學習前端開發技術</p>
-      <a href="https://yufang0321.github.io/about/" class="btn btn-outline-primary">Know More</a>
-      
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Category</h4>
-      <ul class="list-unstyled">
-        <li><a
-            href="/categories/test/">Test</a>
-        </li>
-        <li><a
-            href="/categories/%e5%89%8d%e7%ab%af%e6%8a%80%e8%a1%93/">前端技術</a>
-        </li>
-        <li><a
-            href="/categories/%e5%be%8c%e7%ab%af%e6%8a%80%e8%a1%93/">後端技術</a>
-        </li>
-        <li><a
-            href="/categories/%e8%b2%93%e6%98%9f%e4%ba%ba/">貓星人</a>
-        </li>
-        <li><a
-            href="/categories/%e9%9c%b2%e7%87%9f/">露營</a>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Tag</h4>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/angular/">Angular</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/backend/">Backend</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/camping/">Camping</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/frontend/">Frontend</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/javascript/">Javascript</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/pets/">Pets</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/spring-boot/">Spring boot</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/test/">Test</a></li>
-        <li class="list-inline-item"><a class="d-block p-2 bg-primary text-white"
-            href="/tags/vue.js/">Vue.js</a></li>
-      </ul>
-    </div>
-    
-    <div class="widget">
-      <h4 class="widget-title">Social</h4>
-      <ul class="list-inline social-links">
+      <div class="col-lg-10 mx-auto">
         
-        <li class="list-inline-item"><a href="https://github.com/yufang0321"><i class="ti-github"></i></a></li>
+        <a href="/categories/%e5%89%8d%e7%ab%af%e6%8a%80%e8%a1%93"
+          class="text-primary">前端技術</a>
         
-      </ul>
-    </div>
-    
-    
-  </div>
-</div>
-
-      
-      <div class="col-lg-8 mb-5 mb-lg-0">
-        <div class="row">
-          
-          
-          <div class="col-md-6 mb-4">
-    <article class="card">
-        
-        <div class="card-body px-0">
-        
-        <a href="/categories/%e5%be%8c%e7%ab%af%e6%8a%80%e8%a1%93"
-            class="text-primary">後端技術</a>
-        
-        <a href="https://yufang0321.github.io/blog/springboot-1/" class="h5 d-block my-3">SpringBoot @cacheable 實作筆記</a>
+        <h2>使用Angular框架創建一個專案</h2>
         <div class="mb-3 post-meta">
-            <span>By 芳芳</span>
-            
-            <span class="border-bottom border-primary px-2 mx-1"></span>
-            <span>2023-10-18</span>
-            
-        </div>
-        <p class="card-text">SpringBoot @cacheable 實作筆記</p>
-        <a href="https://yufang0321.github.io/blog/springboot-1/" class="btn btn-outline-primary">read more</a>
-        </div>
-    </article>
-</div>
+          <span>By 芳芳</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>08 January 2024</span>
           
         </div>
-      </div>
-      
+        
+        <div class="content mb-5">
+          <p>前端框架Angular的學習筆記</p>
+<ol>
+<li>安裝相關套件：</li>
+</ol>
+<ul>
+<li>
+<p><a href="https://nodejs.org/en/download/current">Node.JS</a>
+不確定有沒有裝過可以先在命令提示字元使用 <code>node -v</code> 確認</p>
+</li>
+<li>
+<p>TypeScript
+windows系統的話在命令提示字元使用 <code>npm install -g typescript</code>
+mac用戶使用 <code>sudo npm install -g typescript</code></p>
+</li>
+<li>
+<p>Typings
+windows系統的話在命令提示字元使用 <code>npm install -g typings</code>
+mac用戶使用 <code>sudo npm install -g typings</code></p>
+</li>
+<li>
+<p>Angular CLI
+在命令提示字元使用 <code>npm install -g @angular/cli</code> 進行安裝</p>
+</li>
+</ul>
+<ol start="2">
+<li>創建專案：</li>
+</ol>
+<p>cd到要創建的資料夾中，輸入 <code>ng new [名稱]</code></p>
+<p><strong>但第一次我使用這個方式創建時，我的專案少了app.module.ts這個檔案</strong></p>
+<p>如果發生這個情形可改使用 <code>ng new [名稱] --no-standalone --routing --ssr=false</code> 就會正常了</p>
+<ol start="3">
+<li>啟動專案：<code>ng serve --open</code></li>
+</ol>
 
-      
-      <div class="col-12 mt-5">
+        </div>
+
+        
         
       </div>
     </div>
   </div>
 </section>
-
 
 
 
