@@ -9,6 +9,13 @@
     <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate>
     <atom:link href="https://yufang0321.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>邏輯空賦值</title>
+      <link>https://yufang0321.github.io/blog/jspractice-6/</link>
+      <pubDate>Fri, 09 Aug 2024 13:40:16 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-6/</guid>
+      <description>工作中遇到後端傳回參數可能有null及空字串的狀況，必須判斷是否為null或空字串，如果是再將預設的值塞入&#xA;故認真的來了解一下false family及如何判斷是否有值及賦值&#xA;這篇是把相關閱讀到的概念都整理成一篇&#xA;falsy Family let a = undefined;&#xD;let b = null;&#xD;let c = &amp;#39;&amp;#39;;&#xD;console.</description>
+    </item>
+    <item>
       <title>TypeScript 私有類別屬性練習</title>
       <link>https://yufang0321.github.io/blog/jspractice-5/</link>
       <pubDate>Fri, 09 Aug 2024 13:00:16 +0800</pubDate>
