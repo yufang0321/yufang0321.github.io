@@ -13,7 +13,7 @@
       <link>https://yufang0321.github.io/blog/jspractice-4/</link>
       <pubDate>Mon, 08 Jan 2024 17:25:16 +0800</pubDate>
       <guid>https://yufang0321.github.io/blog/jspractice-4/</guid>
-      <description>前端框架Angular的學習筆記&#xA;安裝相關套件： Node.JS 不確定有沒有裝過可以先在命令提示字元使用 node -v 確認&#xA;TypeScript windows系統的話在命令提示字元使用 npm install -g typescript mac用戶使用 sudo npm install -g typescript</description>
+      <description>前端框架Angular的學習筆記&#xA;安裝相關套件： Node.JS&#xA;不確定有沒有裝過可以先在命令提示字元使用 node -v 確認&#xA;TypeScript&#xA;windows系統的話在命令提示字元使用 npm install -g typescript</description>
     </item>
   </channel>
 </rss>

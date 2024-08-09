@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>Fang&#39;s Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="TypeScript 私有類別屬性練習">
+  <meta name="author" content="芳芳">
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+  
+  <meta name="generator" content="Hugo 0.121.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://yufang0321.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://yufang0321.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://yufang0321.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://yufang0321.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://yufang0321.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://yufang0321.github.io/images/home.png " type="image/x-icon">
+  <link rel="icon" href="https://yufang0321.github.io/images/home.png " type="image/x-icon">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X6X27TM8SG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X6X27TM8SG');
+</script>
+
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://yufang0321.github.io"><img class="img-fluid"
+          src="https://yufang0321.github.io/images/home.png" alt="Fang&#39;s Blog">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="navbar-brand mx-auto desktop-view" href="https://yufang0321.github.io"><img class="img-fluid"
+                src="https://yufang0321.github.io/images/home.png" alt="Fang&#39;s Blog"></a>
+            </li>
+          </ul>
+        </div>
+
+        
+        <a class="navbar-brand mx-auto desktop-view" href=""></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://yufang0321.github.io/about/">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://yufang0321.github.io/blog/">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://yufang0321.github.io/contact/">Contact</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/%e5%89%8d%e7%ab%af%e6%8a%80%e8%a1%93"
+          class="text-primary">前端技術</a>
+        
+        <h2>TypeScript 私有類別屬性練習</h2>
+        <div class="mb-3 post-meta">
+          <span>By 芳芳</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>09 August 2024</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>TypeScript 私有類別屬性練習</p>
+<p>兩個參數 A、B，A如果為&quot;1&quot;則B=true，A=&ldquo;0&quot;則B=false
+其他則為null
+A可以任意輸入，但是B只能有限輸出</p>
+<div class="highlight"><pre tabindex="0" style="color:#4c4f69;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#8839ef">import</span> { Injectable } from <span style="color:#40a02b">&#39;@angular/core&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#d20f39">@</span>Injectable({
+</span></span><span style="display:flex;"><span>  providedIn<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#40a02b">&#39;root&#39;</span>,
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">export</span> <span style="color:#8839ef">class</span> test {
+</span></span><span style="display:flex;"><span>  <span style="color:#8839ef">public</span> a<span style="color:#04a5e5;font-weight:bold">:</span> string;
+</span></span><span style="display:flex;"><span>  <span style="color:#8839ef">private</span> b<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#8839ef">boolean</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  constructor(x<span style="color:#04a5e5;font-weight:bold">:</span> string) {
+</span></span><span style="display:flex;"><span>    <span style="color:#8839ef">this</span>.a <span style="color:#04a5e5;font-weight:bold">=</span> x;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  getB() {
+</span></span><span style="display:flex;"><span>    console.log(<span style="color:#40a02b">&#39;b:&#39;</span>, <span style="color:#8839ef">this</span>.b);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  changeBByA() {
+</span></span><span style="display:flex;"><span>    console.log(<span style="color:#40a02b">&#39;a:&#39;</span>, <span style="color:#8839ef">this</span>.a);
+</span></span><span style="display:flex;"><span>    <span style="color:#8839ef">if</span> (<span style="color:#8839ef">this</span>.a <span style="color:#04a5e5;font-weight:bold">===</span> <span style="color:#40a02b">&#39;1&#39;</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#8839ef">this</span>.b <span style="color:#04a5e5;font-weight:bold">=</span> <span style="color:#fe640b">true</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#8839ef">else</span> <span style="color:#8839ef">if</span> (<span style="color:#8839ef">this</span>.a <span style="color:#04a5e5;font-weight:bold">===</span> <span style="color:#40a02b">&#39;0&#39;</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#8839ef">this</span>.b <span style="color:#04a5e5;font-weight:bold">=</span> <span style="color:#fe640b">false</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#4c4f69;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">import</span> { Component, inject, ViewEncapsulation } from <span style="color:#40a02b">&#39;@angular/core&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">import</span> { test } from <span style="color:#40a02b">&#39;./test/test&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#d20f39">@</span>Component({
+</span></span><span style="display:flex;"><span>  selector<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#40a02b">&#39;first-test&#39;</span>,
+</span></span><span style="display:flex;"><span>  standalone<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#fe640b">true</span>,
+</span></span><span style="display:flex;"><span>  templateUrl<span style="color:#04a5e5;font-weight:bold">:</span> <span style="color:#40a02b">&#39;./first-test.html&#39;</span>,
+</span></span><span style="display:flex;"><span>  encapsulation<span style="color:#04a5e5;font-weight:bold">:</span> ViewEncapsulation.None,
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#8839ef">export</span> <span style="color:#8839ef">class</span> firstTest {
+</span></span><span style="display:flex;"><span>  constructor() {}
+</span></span><span style="display:flex;"><span>  ngOnInit() {
+</span></span><span style="display:flex;"><span>    <span style="color:#d20f39">let</span> test1 <span style="color:#04a5e5;font-weight:bold">=</span> <span style="color:#8839ef">new</span> test(<span style="color:#40a02b">&#39;0&#39;</span>);
+</span></span><span style="display:flex;"><span>    test1.changeBByA(); 
+</span></span><span style="display:flex;"><span>    test1.getB(); <span style="color:#9ca0b0;font-style:italic">//b: false
+</span></span></span><span style="display:flex;"><span><span style="color:#9ca0b0;font-style:italic"></span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#d20f39">let</span> test2 <span style="color:#04a5e5;font-weight:bold">=</span> <span style="color:#8839ef">new</span> test(<span style="color:#40a02b">&#39;1&#39;</span>);
+</span></span><span style="display:flex;"><span>    test2.changeBByA(); 
+</span></span><span style="display:flex;"><span>    test2.getB(); <span style="color:#9ca0b0;font-style:italic">//b: true
+</span></span></span><span style="display:flex;"><span><span style="color:#9ca0b0;font-style:italic"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#d20f39">let</span> test3 <span style="color:#04a5e5;font-weight:bold">=</span> <span style="color:#8839ef">new</span> test(<span style="color:#40a02b">&#39;3&#39;</span>);
+</span></span><span style="display:flex;"><span>    test3.changeBByA(); 
+</span></span><span style="display:flex;"><span>    test3.getB(); <span style="color:#9ca0b0;font-style:italic">//b: undefined
+</span></span></span><span style="display:flex;"><span><span style="color:#9ca0b0;font-style:italic"></span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yufang0321" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<script>
+  var indexURL = "https://yufang0321.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://yufang0321.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://yufang0321.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://yufang0321.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://yufang0321.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://yufang0321.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://yufang0321.github.io/plugins/search/mark.js"></script>
+
+<script src="https://yufang0321.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://yufang0321.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>
