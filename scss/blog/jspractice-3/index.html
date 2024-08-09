@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-tw"><head>
+  <meta charset="utf-8">
+  <title>Fang&#39;s Blog</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="函式陳述式與函式表達式的比較">
+  <meta name="author" content="芳芳">
+    
+  
+  <meta name="theme-name" content="liva-hugo" />
+  
+  <meta name="generator" content="Hugo 0.121.1">
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://yufang0321.github.io/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="https://yufang0321.github.io/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="https://yufang0321.github.io/plugins/themify-icons/themify-icons.css ">
+  
+  <link rel="stylesheet" href="https://yufang0321.github.io/plugins/venobox/venobox.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://yufang0321.github.io/scss/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://yufang0321.github.io/images/home.png " type="image/x-icon">
+  <link rel="icon" href="https://yufang0321.github.io/images/home.png " type="image/x-icon">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X6X27TM8SG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X6X27TM8SG');
+</script>
+
+
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-white bg-transparent border-bottom pl-0">
+      <a class="navbar-brand mobile-view" href="https://yufang0321.github.io"><img class="img-fluid"
+          src="https://yufang0321.github.io/images/home.png" alt="Fang&#39;s Blog">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <div class="desktop-view">
+          <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item">
+              <a class="navbar-brand mx-auto desktop-view" href="https://yufang0321.github.io"><img class="img-fluid"
+                src="https://yufang0321.github.io/images/home.png" alt="Fang&#39;s Blog"></a>
+            </li>
+          </ul>
+        </div>
+
+        
+        <a class="navbar-brand mx-auto desktop-view" href=""></a>
+
+        <ul class="navbar-nav">
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://yufang0321.github.io/about/">About</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://yufang0321.github.io/blog/">Post</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://yufang0321.github.io/contact/">Contact</a>
+          </li>
+          
+          
+        </ul>
+
+        
+        <!-- search -->
+        
+        
+
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        
+        <a href="/categories/%e5%89%8d%e7%ab%af%e6%8a%80%e8%a1%93"
+          class="text-primary">前端技術</a>
+        
+        <h2>函式陳述式與函式表達式</h2>
+        <div class="mb-3 post-meta">
+          <span>By 芳芳</span>
+          
+          <span class="border-bottom border-primary px-2 mx-1"></span>
+          <span>06 January 2024</span>
+          
+        </div>
+        
+        <div class="content mb-5">
+          <p>javascript書籍閱讀筆記，把不熟悉的觀念用自己的方式記錄與整理一遍！</p>
+<p>先看看這一段程式碼，想想會印出甚麼~</p>
+<div class="highlight"><pre tabindex="0" style="color:#4c4f69;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#d20f39">var</span> fn1 <span style="color:#04a5e5;font-weight:bold">=</span> <span style="color:#d20f39">function</span>() {
+</span></span><span style="display:flex;"><span>    console.log(<span style="color:#40a02b">&#34;我是函式表達式&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#d20f39">function</span> fn1() {
+</span></span><span style="display:flex;"><span>    console.log(<span style="color:#40a02b">&#34;我是函式陳述式&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fn1();
+</span></span></code></pre></div><p>答案是：&ldquo;我是函式表達式&rdquo;</p>
+<p>第一次看這段程式碼時，百思不得其解，主要有幾個重要觀念：</p>
+<ol>
+<li><strong>函式陳述式與函式表達式</strong>：</li>
+</ol>
+<ul>
+<li>函式陳述式(Function Statement)：直接宣告一個函式，並且賦與名稱。</li>
+<li>函式表達式(Function Expression)：宣告一個變數，使用運算子將函式附與到變數上。</li>
+</ul>
+<ol start="2">
+<li><strong>函式陳述式優先</strong>：瀏覽器在在執行程式時，會經過兩階段，第一是創造階段、第二是執行階段</li>
+</ol>
+<ul>
+<li>創造階段時，會先準備一個記憶體空間</li>
+<li>執行階段時，則是真的把值賦與至變數上</li>
+</ul>
+<p>而函式陳述式<strong>在創造階段就會提升</strong>，優於一般變數，故在創造階段後即可呼叫函式
+因此上述程式碼真正的流程是</p>
+<div class="highlight"><pre tabindex="0" style="color:#4c4f69;background-color:#eff1f5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#9ca0b0;font-style:italic">//創造階段：
+</span></span></span><span style="display:flex;"><span><span style="color:#9ca0b0;font-style:italic"></span><span style="color:#d20f39">function</span> fn1() {
+</span></span><span style="display:flex;"><span>    console.log(<span style="color:#40a02b">&#34;我是函式陳述式&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#d20f39">var</span> fn1;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#9ca0b0;font-style:italic">//執行階段
+</span></span></span><span style="display:flex;"><span><span style="color:#9ca0b0;font-style:italic"></span>fn1 <span style="color:#04a5e5;font-weight:bold">=</span> <span style="color:#d20f39">function</span>() {
+</span></span><span style="display:flex;"><span>    console.log(<span style="color:#40a02b">&#34;我是函式表達式&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fn1();
+</span></span></code></pre></div><p>在創造階段時，因為函式陳述式優先，故會先在創造階段時就定義好fn1函式，但此時尚未賦與值，在進入執行階段時，才會再把函式表達式內容賦與進去，故得到&quot;我是函式表達式&quot;的結果。</p>
+<p>閱讀書籍:<a href="https://www.books.com.tw/products/0010941867">看完這本就會懂！帶你無痛提升JavaScript面試力：精選55道前端工程師的核心問題 × 求職加分模擬試題解析</a></p>
+
+        </div>
+
+        
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yufang0321" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<script>
+  var indexURL = "https://yufang0321.github.io/index.json"
+</script>
+
+<!-- JS Plugins -->
+
+<script src="https://yufang0321.github.io/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://yufang0321.github.io/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://yufang0321.github.io/plugins/slick/slick.min.js"></script>
+
+<script src="https://yufang0321.github.io/plugins/venobox/venobox.min.js"></script>
+
+<script src="https://yufang0321.github.io/plugins/search/fuse.min.js"></script>
+
+<script src="https://yufang0321.github.io/plugins/search/mark.js"></script>
+
+<script src="https://yufang0321.github.io/plugins/search/search.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://yufang0321.github.io/js/script.min.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<div id="js-cookie-box" class="cookie-box cookie-box-hide">
+	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-primary ml-2">I Accept</span>
+</div>
+<script>
+	(function ($) {
+		const cookieBox = document.getElementById('js-cookie-box');
+		const cookieButton = document.getElementById('js-cookie-button');
+		if (!Cookies.get('cookie-box')) {
+			cookieBox.classList.remove('cookie-box-hide');
+			cookieButton.onclick = function () {
+				Cookies.set('cookie-box', true, {
+					expires:  2 
+				});
+				cookieBox.classList.add('cookie-box-hide');
+			};
+		}
+	})(jQuery);
+</script>
+
+
+<style>
+.cookie-box {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  z-index: 9999;
+  padding: 1rem 2rem;
+  background: rgb(71, 71, 71);
+  transition: all .75s cubic-bezier(.19, 1, .22, 1);
+  color: #fdfdfd;
+}
+
+.cookie-box-hide {
+  display: none;
+}
+</style>
+</body>
+</html>

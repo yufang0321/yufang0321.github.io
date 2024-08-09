@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Fang&#39;s Blog</title>
+    <link>https://yufang0321.github.io/blog/</link>
+    <description>Recent content in blog on Fang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Tue, 29 Oct 2019 13:49:23 +0600</lastBuildDate>
+    <atom:link href="https://yufang0321.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>邏輯空賦值</title>
+      <link>https://yufang0321.github.io/blog/jspractice-6/</link>
+      <pubDate>Fri, 09 Aug 2024 13:40:16 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-6/</guid>
+      <description>工作中遇到後端傳回參數可能有null及空字串的狀況，必須判斷是否為null或空字串，如果是再將預設的值塞入&#xA;故認真的來了解一下false family及如何判斷是否有值及賦值&#xA;這篇是把相關閱讀到的概念都整理成一篇&#xA;falsy Family let a = undefined;&#xD;let b = null;&#xD;let c = &amp;#39;&amp;#39;;&#xD;console.</description>
+    </item>
+    <item>
+      <title>TypeScript 私有類別屬性練習</title>
+      <link>https://yufang0321.github.io/blog/jspractice-5/</link>
+      <pubDate>Fri, 09 Aug 2024 13:00:16 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-5/</guid>
+      <description>TypeScript 私有類別屬性練習&#xA;兩個參數 A、B，A如果為&amp;quot;1&amp;quot;則B=true，A=&amp;ldquo;0&amp;quot;則B=false 其他則為null A可以任意輸入，但是B只能有限輸出&#xA;import { Injectable } from &amp;#39;@angular/core&amp;#39;; @Injectable({ providedIn: &amp;#39;root&amp;#39;, }) export class test { public a: string; private b: boolean; constructor(x: string) { this.</description>
+    </item>
+    <item>
+      <title>使用Angular框架創建一個專案</title>
+      <link>https://yufang0321.github.io/blog/jspractice-4/</link>
+      <pubDate>Mon, 08 Jan 2024 17:25:16 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-4/</guid>
+      <description>前端框架Angular的學習筆記&#xA;安裝相關套件： Node.JS&#xA;不確定有沒有裝過可以先在命令提示字元使用 node -v 確認&#xA;TypeScript&#xA;windows系統的話在命令提示字元使用 npm install -g typescript</description>
+    </item>
+    <item>
+      <title>第二露-新竹田埔露營區</title>
+      <link>https://yufang0321.github.io/blog/camping-2/</link>
+      <pubDate>Sun, 07 Jan 2024 11:01:10 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/camping-2/</guid>
+      <description>我們的第一次跨年露營！ 這次的目的地是：新竹尖石田埔露營地&#xA;和好友一共四個人，另外再租了天幕和冰桶&#xA;因為人數比較多，所以另外租了大冰桶和天幕，在松果戶外新竹店租裝備，可先在網路預訂要租的設備和時間&#xA;領完裝備就出發前往露營地，老實說路真的很不好開，在後面一段Google map路程是10幾分鐘，但我們開了至少半小時&amp;hellip;都是一段有水泥一段是石頭泥巴路，一路上還遇到兩次會車，還好都是當地人的車，一路後退讓我們通過 中間有一度還開錯路，趕緊掉頭&#xA;錯過叉路的位置：24°38&#39;23.5&amp;quot;N 121°16&#39;30.1&amp;quot;E 抵達！本來以為會很冷，結果天氣超好，太陽很大，大家開始脫外套 準備搭帳棚~</description>
+    </item>
+    <item>
+      <title>函式陳述式與函式表達式</title>
+      <link>https://yufang0321.github.io/blog/jspractice-3/</link>
+      <pubDate>Sat, 06 Jan 2024 14:28:50 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-3/</guid>
+      <description>javascript書籍閱讀筆記，把不熟悉的觀念用自己的方式記錄與整理一遍！&#xA;先看看這一段程式碼，想想會印出甚麼~&#xA;var fn1 = function() { console.log(&amp;#34;我是函式表達式&amp;#34;); } function fn1() { console.</description>
+    </item>
+    <item>
+      <title>淺拷貝(shallow copy)與深拷貝(deep copy)</title>
+      <link>https://yufang0321.github.io/blog/jspractice-2/</link>
+      <pubDate>Thu, 04 Jan 2024 09:31:50 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-2/</guid>
+      <description>在工作中踩過的雷，紀錄一下&#xA;淺拷貝shallow copy 方法一 const objA = { a: 1, b: 2 } const objB = objA objB.</description>
+    </item>
+    <item>
+      <title>Map, Filter &amp; Reduce 用法區別</title>
+      <link>https://yufang0321.github.io/blog/jspractice-1/</link>
+      <pubDate>Wed, 03 Jan 2024 15:40:50 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-1/</guid>
+      <description>Map() 說文解字：重新整理一陣列內容，並回傳一新的陣列 基本語法：Array.map(function(currentValue, index, arr), thisValue)&#xA;currentValue:當前正在處理的元素 index:正在處理的元素在array中的索引 array:正在處理的array本身 不會改變原陣列，回傳一新的陣列</description>
+    </item>
+    <item>
+      <title>第一次露營</title>
+      <link>https://yufang0321.github.io/blog/camping-1/</link>
+      <pubDate>Mon, 25 Dec 2023 21:15:47 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/camping-1/</guid>
+      <description>第一次露營-桃園達拉蓋 臨時起意前往桃園復興區的達拉蓋露營區 可能因為是平日，當天只有我們我們一組客人&#xA;此次是 無裝備露營 只帶了兩餐的食物和鍋具和餐具就出發!&#xA;↑ 冷氣團準備進入台灣，天氣陰陰的，但風景還是不錯~&#xA;↑ 愜意地喝著熱茶~</description>
+    </item>
+    <item>
+      <title>前端框架練習</title>
+      <link>https://yufang0321.github.io/blog/vue_practice/</link>
+      <pubDate>Mon, 25 Dec 2023 10:07:47 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/vue_practice/</guid>
+      <description>使用Vue框架架設簡易店商網站 連結： 前端框架練習網站</description>
+    </item>
+    <item>
+      <title>我家貓貓梅干</title>
+      <link>https://yufang0321.github.io/blog/mycat/</link>
+      <pubDate>Sun, 24 Dec 2023 10:07:47 +0600</pubDate>
+      <guid>https://yufang0321.github.io/blog/mycat/</guid>
+      <description>梅干 這是我家貓貓全名 張梅干&#xA;出生：2020年8月17日 品種：米克斯 興趣：打人、睡覺、跳上跳下、吃零食 朋友：窗外的小鳥 </description>
+    </item>
+    <item>
+      <title>SpringBoot @cacheable 實作筆記</title>
+      <link>https://yufang0321.github.io/blog/springboot-1/</link>
+      <pubDate>Wed, 18 Oct 2023 11:23:47 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/springboot-1/</guid>
+      <description>spring boot @cacheable 實作 環境配置 pom檔加入spring-boot-starter-cache、com.github.ben-manes.caffeine模組 application.yml 配置&#xA;expireAfterAccess=120s 表示緩存保持2分鐘</description>
+    </item>
+    <item>
+      <title>Test</title>
+      <link>https://yufang0321.github.io/blog/post-13/</link>
+      <pubDate>Tue, 29 Oct 2019 10:07:47 +0600</pubDate>
+      <guid>https://yufang0321.github.io/blog/post-13/</guid>
+      <description>Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Emphasis Emphasis, aka italics, with asterisks or underscores.</description>
+    </item>
+  </channel>
+</rss>

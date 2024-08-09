@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on Fang&#39;s Blog</title>
+    <link>https://yufang0321.github.io/tags/javascript/</link>
+    <description>Recent content in JavaScript on Fang&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Fri, 09 Aug 2024 13:40:16 +0800</lastBuildDate>
+    <atom:link href="https://yufang0321.github.io/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>邏輯空賦值</title>
+      <link>https://yufang0321.github.io/blog/jspractice-6/</link>
+      <pubDate>Fri, 09 Aug 2024 13:40:16 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-6/</guid>
+      <description>工作中遇到後端傳回參數可能有null及空字串的狀況，必須判斷是否為null或空字串，如果是再將預設的值塞入&#xA;故認真的來了解一下false family及如何判斷是否有值及賦值&#xA;這篇是把相關閱讀到的概念都整理成一篇&#xA;falsy Family let a = undefined;&#xD;let b = null;&#xD;let c = &amp;#39;&amp;#39;;&#xD;console.</description>
+    </item>
+    <item>
+      <title>TypeScript 私有類別屬性練習</title>
+      <link>https://yufang0321.github.io/blog/jspractice-5/</link>
+      <pubDate>Fri, 09 Aug 2024 13:00:16 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-5/</guid>
+      <description>TypeScript 私有類別屬性練習&#xA;兩個參數 A、B，A如果為&amp;quot;1&amp;quot;則B=true，A=&amp;ldquo;0&amp;quot;則B=false 其他則為null A可以任意輸入，但是B只能有限輸出&#xA;import { Injectable } from &amp;#39;@angular/core&amp;#39;; @Injectable({ providedIn: &amp;#39;root&amp;#39;, }) export class test { public a: string; private b: boolean; constructor(x: string) { this.</description>
+    </item>
+    <item>
+      <title>使用Angular框架創建一個專案</title>
+      <link>https://yufang0321.github.io/blog/jspractice-4/</link>
+      <pubDate>Mon, 08 Jan 2024 17:25:16 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-4/</guid>
+      <description>前端框架Angular的學習筆記&#xA;安裝相關套件： Node.JS&#xA;不確定有沒有裝過可以先在命令提示字元使用 node -v 確認&#xA;TypeScript&#xA;windows系統的話在命令提示字元使用 npm install -g typescript</description>
+    </item>
+    <item>
+      <title>函式陳述式與函式表達式</title>
+      <link>https://yufang0321.github.io/blog/jspractice-3/</link>
+      <pubDate>Sat, 06 Jan 2024 14:28:50 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-3/</guid>
+      <description>javascript書籍閱讀筆記，把不熟悉的觀念用自己的方式記錄與整理一遍！&#xA;先看看這一段程式碼，想想會印出甚麼~&#xA;var fn1 = function() { console.log(&amp;#34;我是函式表達式&amp;#34;); } function fn1() { console.</description>
+    </item>
+    <item>
+      <title>淺拷貝(shallow copy)與深拷貝(deep copy)</title>
+      <link>https://yufang0321.github.io/blog/jspractice-2/</link>
+      <pubDate>Thu, 04 Jan 2024 09:31:50 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-2/</guid>
+      <description>在工作中踩過的雷，紀錄一下&#xA;淺拷貝shallow copy 方法一 const objA = { a: 1, b: 2 } const objB = objA objB.</description>
+    </item>
+    <item>
+      <title>Map, Filter &amp; Reduce 用法區別</title>
+      <link>https://yufang0321.github.io/blog/jspractice-1/</link>
+      <pubDate>Wed, 03 Jan 2024 15:40:50 +0800</pubDate>
+      <guid>https://yufang0321.github.io/blog/jspractice-1/</guid>
+      <description>Map() 說文解字：重新整理一陣列內容，並回傳一新的陣列 基本語法：Array.map(function(currentValue, index, arr), thisValue)&#xA;currentValue:當前正在處理的元素 index:正在處理的元素在array中的索引 array:正在處理的array本身 不會改變原陣列，回傳一新的陣列</description>
+    </item>
+  </channel>
+</rss>
